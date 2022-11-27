@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<records>
+    <record reference="176186">
+        <startBalance>5429</startBalance>
+        <mutation>-939</mutation>
+        <endBalance>6368</endBalance>
+        <issues>
+            <issue>BALANCE_NOT_MATCH</issue>
+        </issues>
+    </record>
+    <record reference="145501">
+        <startBalance>3980</startBalance>
+        <mutation>1000</mutation>
+        <endBalance>4981</endBalance>
+        <issues>
+            <issue>BALANCE_NOT_MATCH</issue>
+        </issues>
+    </record>
+</records>

@@ -1,0 +1,5 @@
+ext.pathMapper = [:]
+ext.pathMapper.put('//wsl\$/Ubuntu/home/brunomiller/.sdkman/candidates/java/17.0.5-amzn/bin/java', '/home/brunomiller/.sdkman/candidates/java/17.0.5-amzn/bin/java')
+ext.pathMapper.put('//wsl\$/Ubuntu/home/brunomiller/work/customer-statement-validator', '/home/brunomiller/work/customer-statement-validator')
+ext.pathMapper.put("<<target java executable path>>", '/home/brunomiller/.sdkman/candidates/java/17.0.5-amzn/bin/java')
+ext.mapPath = { path -> pathMapper.get(path) ?: path }
