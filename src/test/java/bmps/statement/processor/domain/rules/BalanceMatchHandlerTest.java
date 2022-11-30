@@ -26,14 +26,13 @@ class BalanceMatchHandlerTest {
         Assertions.assertEquals(statement.issues(), Set.of(Issue.BALANCE_NOT_MATCH));
     }
 
-
     @Test
-    void statementShouldMatchTheEndBalance() {
+    void debitMutationShouldMatchTheEndBalance() {
         var handler = new BalanceMatchHandler();
 
         Statement statement = new Statement(100,
                 new BigDecimal(100),
-                new BigDecimal(10),
+                new BigDecimal(-10),
                 new BigDecimal(90),
                 new HashSet<>());
 
@@ -42,4 +41,18 @@ class BalanceMatchHandlerTest {
         Assertions.assertEquals(statement.issues(), Set.of());
     }
 
+    @Test
+    void creditMutationShouldMatchTheEndBalance() {
+        var handler = new BalanceMatchHandler();
+
+        Statement statement = new Statement(100,
+                new BigDecimal("100.9"),
+                new BigDecimal("1.4"),
+                new BigDecimal("102.30"),
+                new HashSet<>());
+
+        statement = handler.check(statement);
+
+        Assertions.assertEquals(statement.issues(), Set.of());
+    }
 }

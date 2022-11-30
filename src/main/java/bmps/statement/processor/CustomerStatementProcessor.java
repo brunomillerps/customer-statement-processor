@@ -7,7 +7,6 @@ import bmps.statement.processor.domain.rules.BalanceMatchHandler;
 import bmps.statement.processor.domain.rules.RuleHandler;
 import bmps.statement.processor.framework.files.FileFactory;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ public class CustomerStatementProcessor {
             new BalanceMatchHandler()
     );
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
 
         var filePathOptional = Arrays.stream(args).filter(arg -> arg.startsWith("filePath")).findFirst();
