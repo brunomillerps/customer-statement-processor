@@ -53,9 +53,9 @@ A `/report` directory will be created withing files in it containing the validat
 Used to apply rules along a chain of handlers with only one call.
 
 #### > Decorator
-Used to apply of finding duplicated statements after applying rules for each/sigular statement.
+Used to apply the rule for duplicate statements after applying rules for each/singular statement.
 
-*Point of attention*: In case of many other rules that would need to traverse all statements again, it must be more appropriate to apply Chain of Responsibility as well, with an abstract method called while iterating throw statements preventing exponential time processing.
+*Point of attention*: In case of many other rules that would need to traverse all statements again, it must be more appropriate to apply Chain of Responsibility as well, with an abstract method being called while iterating through statements preventing exponential time processing.
 
 #### Parallelism
 Each file will be read, processed, and written  by a separate thread, using default thread pool.
