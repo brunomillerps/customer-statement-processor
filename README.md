@@ -46,7 +46,7 @@ A `/report` directory will be created withing files in it containing the validat
 ### Architechure
 **Hexagonal** is in place to keep interfaces and implementations segregated to decouple the app, and facilitate new implementations.
 
-**No external dependency** to keep the application as smaller as possible, ungin only Java Core.
+**No external dependency** to keep the application as smaller as possible, using only Java Core.
 
 ### Design patterns
 #### > Chain of responsability
