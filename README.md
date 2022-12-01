@@ -67,7 +67,7 @@ For CSV the application reads all lines from a file as a Stream. Unlike reading 
 For XML, an improvement is preferable as a better maintainable approach. Now the application uses DOM reading, which does load the entire XML file into memory.
 
 
-## Improvments
+## Improvements
 
 - Add robust logging system
 - Prepare for native image, reducing application size
