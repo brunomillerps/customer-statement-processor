@@ -35,7 +35,7 @@ java -jar build/libs/customer-statement-validator-1.0.jar "filePath=/dirFiles"
 
 ### Output report
 
-An `/report` directory will be created withing files in it containing the validations of each statement proccessed, following the same file extension.
+A `/report` directory will be created withing files in it containing the validations of each statement proccessed, following the same file extension.
 
 ## Application decisions
 
